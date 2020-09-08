@@ -32,11 +32,13 @@ function createProgram(gl, vertexShader, fragmentShader) {
 }
 
 function main() {
+  // Initialization code:
+
   // Get A WebGL context
   var canvas = document.getElementById("canvas");
   var gl = canvas.getContext("webgl");
   if (!gl) {
-    return;
+    console.log("No webgl context for you!");
   }
 
   // My code: sets canvas to largest square that will fit on page
@@ -108,6 +110,8 @@ function main() {
       positionAttributeLocation, size, type, normalize, stride, offset);
 
   // draw
+  // For each thing you want to draw you setup a bunch of state then execute a
+  // pair of functions by calling gl.drawArrays or gl.drawElements
   var primitiveType = gl.TRIANGLES;
   var offset = 0;
   var count = 3;
