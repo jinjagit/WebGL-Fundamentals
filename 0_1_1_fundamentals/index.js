@@ -164,6 +164,11 @@ function main() {
   var offset = 0;
   var count = 3;
   gl.drawArrays(primitiveType, offset, count);
+
+  // Because we set primitiveType to gl.TRIANGLES, each time our vertex shader
+  // is run 3 times WebGL will draw a triangle based on the 3 values we set
+  // gl_Position to. No matter what size our canvas is those values are in clip
+  // space coordinates that go from -1 to 1 in each direction.
 }
 
 main();
