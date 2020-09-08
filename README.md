@@ -9,8 +9,6 @@ Working through the [WebGL Fundamental course](https://webglfundamentals.org/)
 
 ## running the examples
 
-I'm running on Linux, so all instructions are for that context.  
-
 To run each example:  
 * Open a  terminal in `WebGL-Fundamentals` directory  
 * `$ cd <chosen directory within WebGL-Fundamentals directory>`  
