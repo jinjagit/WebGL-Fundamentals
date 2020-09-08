@@ -39,19 +39,18 @@ function main() {
     return;
   }
 
-  console.log(window.innerHeight)
-
-    if (window.innerHeight > window.innerWidth) {
-        canvas.height = window.innerWidth;
-        canvas.width = window.innerWidth;
-        canvas.style.height = window.innerWidth;
-        canvas.style.width = window.innerWidth;
-    } else {
-        canvas.height = window.innerHeight;
-        canvas.width = window.innerHeight;
-        canvas.style.height = window.innerHeight;
-        canvas.style.width = window.innerHeight; 
-    }
+  // My code: sets canvas to largest square that will fit on page
+  if (window.innerHeight > window.innerWidth) {
+    canvas.height = window.innerWidth;
+    canvas.width = window.innerWidth;
+    canvas.style.height = window.innerWidth;
+    canvas.style.width = window.innerWidth;
+  } else {
+    canvas.height = window.innerHeight;
+    canvas.width = window.innerHeight;
+    canvas.style.height = window.innerHeight;
+    canvas.style.width = window.innerHeight; 
+  }
 
   // Get the strings for our GLSL shaders
   var vertexShaderSource = document.querySelector("#vertex-shader-2d").text;
