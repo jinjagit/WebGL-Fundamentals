@@ -1,6 +1,6 @@
 # WebGL-Fundamentals
 
-Working through the [WebGL Fundamental course](https://webglfundamentals.org/)  
+Working through the [WebGL Fundamentals course](https://webglfundamentals.org/)  
 
 ## setup
 
