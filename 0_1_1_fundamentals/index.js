@@ -140,7 +140,7 @@ function main() {
   // Turn on the attribute
   gl.enableVertexAttribArray(positionAttributeLocation);
 
-  // Bind the position buffer.
+  // Bind the position buffer (so that we can read from it).
   gl.bindBuffer(gl.ARRAY_BUFFER, positionBuffer);
 
   // Tell the attribute how to get data out of positionBuffer (ARRAY_BUFFER)
