@@ -3,9 +3,9 @@
 Example code which draws 50 random sized and randomly colored rectangles.  
 
 ## My variations from example code:
-* Added webgl-utils.js file to directory, rather than as a url in `index.html`  
-* Added lines in `index.js` to set canvas to largest square possible.  
-* Changed lines in `index.js` from:  
+* Add webgl-utils.js file to directory, rather than as a url in `index.html`  
+* Add lines in `index.js` to set canvas to largest square possible.  
+* Change lines in `index.js` from:  
 ```
 setRectangle(
         gl, randomInt(300), randomInt(300), randomInt(300), randomInt(300));
