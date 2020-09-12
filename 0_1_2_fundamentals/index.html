@@ -17,7 +17,7 @@
      // convert the rectangle from pixels to 0.0 to 1.0
      vec2 zeroToOne = a_position / u_resolution;
   
-     // convert from 0->1 to -1->+1 (clipspace)
+     // convert from 0 -> 1 to -1 -> +1 (clipspace)
      vec2 clipSpace = zeroToOne - 1.0;
   
      gl_Position = vec4(clipSpace * vec2(1, -1), 0, 1);

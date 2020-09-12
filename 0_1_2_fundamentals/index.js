@@ -120,4 +120,9 @@ function setRectangle(gl, x, y, width, height) {
   ]), gl.STATIC_DRAW);
 }
 
+// For most applications updating the data in a buffer like we do in
+// setRectangle is not common. This example is simple to explain, however, since
+// it shows pixel coordinates as input and demonstrates doing a small amount of
+// math in GLSL.
+
 main();
