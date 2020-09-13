@@ -3,6 +3,7 @@
 
 "use strict";
 
+// get the image file and call render(image) when image loads
 function main() {
   var image = new Image();
   requestCORSIfNotSameOrigin(image, "https://webglfundamentals.org/webgl/resources/leaves.jpg")
